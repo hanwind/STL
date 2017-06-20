@@ -12,7 +12,7 @@ void *operator new(size_t size)
 */
 int main()
 {
-	test::fun7();
+	test::TestRBTree();
 	system("pause");
 	return 0;
 }

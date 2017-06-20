@@ -39,6 +39,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -81,6 +83,8 @@
     <ClInclude Include="A.h" />
     <ClInclude Include="Foo.h" />
     <ClInclude Include="hmemory.h" />
+    <ClInclude Include="RBTree.h" />
+    <ClInclude Include="RBTreeTest.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Test.h" />
   </ItemGroup>

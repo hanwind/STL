@@ -7,6 +7,8 @@
 #include <stack>
 #include <list>
 #include <queue>
+
+#include "RBTree.h"
 using namespace std;
 namespace test
 {
@@ -103,11 +105,22 @@ namespace test
 			ipq.pop();
 		}
 		cout<<endl;
-		void fun8()
+	}
+	void TestRBTree()
+	{
+		std::cout<<"------------测试目的红黑树 ---------------"<<std::endl;
+		std::cout<<"------------时间：2017/6/20------------------------------"<<std::endl;
+		HanSTL::RBTree<int,int> RBT;
+		int arr[10] = {1,2,3,5,12,16,18,26,99,666};
+		bool tag =false;
+		for (int i = 0;i < 10;++i)
 		{
-			std::cout<<"------------测试目的 单向链表 ---------------"<<std::endl;
-			std::cout<<"------------时间：2017/4/21------------------------------"<<std::endl;
-			int i;
+			tag = RBT.insert(arr[i],i);
+			tag =false;
 		}
+		RBT.InOrder();
+		std::cout<<std::endl;
+		std::cout<<"isRBTree"<<RBT.isRBTree()<<std::endl;
+		std::cout<<std::endl;
 	}
 }
